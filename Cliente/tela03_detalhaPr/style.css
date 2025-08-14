@@ -1,7 +1,7 @@
 body {
-    display: flex;
-    flex-direction: column;
-   align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: Arial, sans-serif;
   background-color: #f1f5f9;
   text-align: center;
@@ -13,9 +13,9 @@ h2 {
 }
 
 .tabs {
-    background-color: rgb(185, 179, 179);
+  background-color: rgb(185, 179, 179);
   display: flex;
-    border-radius: 10px;
+  border-radius: 10px;
   align-items: center;
   width: 280px;
   height: 40px;
@@ -38,7 +38,7 @@ h2 {
 
 .tab-button.active {
   background-color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -46,19 +46,48 @@ h2 {
   padding: 20px;
   border-radius: 15px;
   margin: 0 auto 20px;
-    width: 40%;
-    height: 450px;
+  width: 40%;
+  height: 450px;
   transition: all 0.3s ease;
+  z-index: 1;
 }
+
+.detalhe {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-bottom: 10px;
+  padding-right: 17px;
+  width: 40%;
+  height: 155px;
+  background-color: #5a7d9a;
+  z-index: -1;
+
+  /* Exemplo de curva orgânica */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+}
+
+.voltar {
+  position: absolute;
+  background-image: url(../Imgs/foto-voltar.png);
+  background-position: center;
+  background-size: contain;
+  margin-top: -125px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+
 
 .photo {
   width: 120px;
   height: 120px;
   background-image: url(../Imgs/icone-perfil.png);
+  background-color: white;
   background-size: contain;
   background-position: center;
   margin: 0 auto 10px;
-  border-radius: 15px;
+  border-radius: 50%;
 }
 
 .subtitle {
@@ -81,31 +110,33 @@ h2 {
   background-color: #ccc;
 }
 
-#dados-fixos,#conteudo-dinamico {
-  
+#dados-fixos,
+#conteudo-dinamico {
+
   transition: opacity 0.3s;
   font-size: 0.85rem;
   align-items: center;
 }
-  .icone{
-    
-    background-color: #fff;
-    border-radius: 20px;
-    width: 150px;
-    height: 25px;
-    margin-left: 40px;
-  
-  }
+
+.icone {
+
+  background-color: #fff;
+  border-radius: 20px;
+  width: 150px;
+  height: 25px;
+  margin-left: 40px;
+
+}
 
 .notificacao {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
-    z-index: 99;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  z-index: 99;
 }

@@ -49,6 +49,16 @@ html, body{
     border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+.form .voltar{
+    position: absolute;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/foto-voltar.png);
+    background-position: center;
+    background-size: contain;
+}
+
 .form > h2{
     font-size: 30px;
     padding: 20px;
